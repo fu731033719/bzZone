@@ -24,25 +24,37 @@ import {Fragment} from 'react';
 function BackAnimation() {
   /** registration eyeFn  */
   const eyeball = (e) => {
-    let eyeWs = document.querySelectorAll('.eye-dot');
-    eyeWs.forEach(eye => {
+    calEyeBall(e.pageX, e.pageY)
+  }
+
+  const calEyeBall = (mouseX, mouseY) => {
+    let eyeDot = document.querySelectorAll('.eye-dot');
+    eyeDot.forEach((eye, index) => {
       let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2)
       let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2)
-      let rad = Math.atan2(e.pageX - x, e.pageY - y)
-      let rot = (rad * (180 / Math.PI) * -1) + 270
-      // limit rotate
-      if (rot > 360) {
-        rot = 360
-      }
-      if (rot < 318) {
-        rot = 318
-      }
+      let rad = Math.atan2(mouseX - x, mouseY - y);
+      let rot = (rad * (180 / Math.PI) * -1) + 180;
+      const dot = document.getElementsByClassName('dot')[index];
+      console.log(dot.getBoundingClientRect().left, dot.getBoundingClientRect().top)
+      const eyeblack = document.getElementsByClassName(`eye-${index + 1}`)[0];
+      let {left, top} = dot.getBoundingClientRect();
+      left += document.documentElement.scrollLeft;
+      top += document.documentElement.scrollTop;
+      console.log(left, top);
       eye.style.transform = `rotate(${rot}deg)`;
-
+      eyeblack.style.transform = `translate(${left - 25}px, ${top - 30}px)`
     });
   }
 
   document.querySelector('body').addEventListener('mousemove', eyeball);
+  
+  window.onload = () => {
+    calEyeBall(0,0);
+  }
+
+  window.onresize = () => {
+    calEyeBall(0,0);
+  }
 
   return (
     <Fragment>
@@ -60,12 +72,14 @@ function BackAnimation() {
             <img className='nose' src={Nose} alt=""/> 
             <img className='eye-w eye-w-1' src={LeftW} alt=""/>
             <div className='eye-dot dot-1'>
-              <img className='eye eye-1' src={Eye} alt=""/>
+              <div className='dot'></div>
             </div>
+            <img className='eye eye-1' src={Eye} alt=""/>
             <img className='eye-w eye-w-2' src={LeftW} alt=""/>
             <div className='eye-dot dot-2'>
-              <img className='eye eye-2' src={Eye} alt=""/>
+              <div className='dot'></div>
             </div>
+            <img className='eye eye-2' src={Eye} alt=""/>
             <img className='mouth' src={Mouth} alt=""/>
           </div>
           {/* start-container */}
