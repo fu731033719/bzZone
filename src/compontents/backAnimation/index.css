@@ -1,0 +1,208 @@
+@keyframes l-t-b-trans {
+    0% {
+        left:-30vw;
+        top: -30vw;
+    }
+    40% {
+        left: -2vw;
+        top: -5vw;
+    }
+    60% {
+        left: 0vw;
+        top: -30vw;
+    }
+    100% {
+        left:-30vw;
+        top: -30vw;
+    }
+}
+
+@keyframes r-t-b-trans {
+    0% {
+        right: -15vw;
+        top: -3vw;
+    }
+    20% {
+        right: -15vw;
+        top: -5vw;
+    }
+    30% {
+        right: -13vw;
+        top: -5vw;
+    }
+    50% {
+        right: -17vw;
+        top: -1vw;
+    }
+    75% {
+        right: -16vw;
+        top: -3vw;
+    }
+    100% {
+        right: -15vw;
+        top: -3vw;
+    }
+    
+}
+
+.global-bg {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+/** @ready to delete */
+.bg-test {
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+    margin: 0 auto;
+}
+
+.content {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+/** ball animation && face */
+.l-t-ball {
+    width: 80vw;
+    position: absolute;
+    left: -2vw;
+    top: -30vw;
+    animation: l-t-b-trans infinite 12s ease-in-out;
+}
+
+.face-container {
+    position: relative;
+}
+
+.nose {
+    width: 2.9vw;
+    right: 29.4vw;
+    top: 30.6vw;
+    position: absolute;
+}
+
+
+.eyes {
+    width: 16.5vw;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 27vw;
+    right: 23.1vw;
+}
+
+.eye-line {
+    width: 5.1vw;
+    height: 5.1vw;
+}
+
+.eye-w {
+    top:0;
+    position: absolute;
+}
+
+.eye-w {
+    width: 5.1vw;
+    position: absolute;
+}
+
+.eye-w-1 {
+    right: 33.5vw;
+    top: 27vw;
+}
+
+.eye-w-2 {
+    right: 23.1vw;
+    top: 27vw;
+}
+
+.eye-dot {
+    position: absolute;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+}
+
+.dot-1 {
+    right: 35.5vw;
+    top: 29vw;
+}
+
+.dot-2 {
+    right: 25.1vw;
+    top: 29vw;
+}
+
+.eye {
+    width: 2.8vw;
+    position: absolute;
+}
+.eye-1 {
+    right: 0vw;
+}
+
+.eye-2 {
+    right: 0vw;
+}
+
+
+
+.mouth {
+    width: 4.4vw;
+    position: absolute;
+    right: 25.1vw;
+    top: 37.5vw;
+}
+
+.r-t-ball {
+    width: 80vw;
+    position: absolute;
+    right: -13vw;
+    top: -5vw;
+    animation: r-t-b-trans infinite 12s ease-in-out;
+}
+
+/** start */
+
+.start {
+    width: 3.4vw;
+    position: absolute;
+}
+
+.start-1 {
+    right: 10.1vw;
+    top: 20.5vw;
+}
+
+.start-2 {
+    right: 43.8vw;
+    top: 47.2vw;
+}
+
+/** catlog */
+.title {
+    position: relative;
+}
+
+.name {
+    position: absolute;
+    top: 22vw;
+    left: 6vw;
+}
+
+.name-pic {
+    width: 43vw;
+}
+
+.log {
+    position: absolute;
+    top: 35vw;
+    left: 6vw;
+}
+
+.log-pic {
+    width: 31vw;
+}

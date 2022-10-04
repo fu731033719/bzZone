@@ -1,0 +1,61 @@
+@keyframes l-b-trans {
+    0% {
+        bottom: -10vw;
+        left: -20vw;
+    }
+    20% {
+        bottom: -5vw;
+        left: -10vw;
+    }
+    50% {
+        bottom: 0vw;
+        left: -20vw;
+    }
+    90% {
+        bottom: -15vw;
+        left: -20vw;
+    }
+    100% {
+        bottom: -10vw;
+        left: -20vw;
+    }
+}
+
+@keyframes r-b-trans {
+    0% {
+        bottom: 10vw;
+        right: -10vw;
+    }
+    50% {
+        bottom: -10vw;
+        right: -5vw;
+    }
+    100% {
+        bottom: 10vw;
+        right: -10vw;
+    }
+    
+}
+
+.bottom {
+    width: 100vw;
+    position: relative;
+    transform: translate(0, -20vw);
+    z-index: -1;
+}
+
+.l-b-ball {
+    width: 80vw;
+    position: absolute;
+    bottom: -10vw;
+    left: -20vw;
+    animation: l-b-trans infinite 14s ease-in-out;
+}
+
+.r-b-ball{
+    width: 75vw;
+    position: absolute;
+    bottom: -20vw;
+    right: -5vw;
+    animation: r-b-trans infinite 14s ease-in-out;
+}

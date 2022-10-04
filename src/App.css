@@ -1,0 +1,47 @@
+.project-list {
+    margin: 0 auto;
+    padding: 76vw 0;
+}
+
+.list-title {
+    padding-left: 6vw;
+}
+
+.list-content {
+    width: 74vw;
+    margin: 5.5vw auto 0 auto;
+    display: flex;
+    /* justify-content: space-evenly; */
+    flex-flow: wrap;
+}
+
+.list-item {
+    width: 19.1vw;
+    height: 19.1vw;
+    border-radius: 20px;
+    background: #808080;
+    margin-right: 6.5vw;
+    margin-bottom: 2vw;
+}
+
+.list-item:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.more {
+    width: 11.7vw;
+    height: 4.7vw;
+    line-height: 4.7vw;
+    font-size: 1.5vw;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 40px 100px 100px 40px;
+    color: #fff;
+    text-align: center;
+    margin: 5.4vw auto 0 43.3vw;
+}
+
+.contact {
+    padding-left: 6vw;
+    margin-top: 13.5vw;
+}
