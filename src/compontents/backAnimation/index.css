@@ -149,13 +149,15 @@
     position: absolute;
 }
 /**调试用 */
-/* .eye-1 {
-    opacity: .1;
+.eye-1 {
+    width: 2.8vw;
+    transform: translate(-50%, -50%);
 }
 
 .eye-2 {
-    opacity: .1;
-} */
+    width: 2.8vw;
+    transform: translate(-50%, -50%);
+}
 
 
 

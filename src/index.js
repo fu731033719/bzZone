@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route
 } from "react-router-dom";
@@ -14,13 +14,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.Fragment>
     <BackAnimation />
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="content" element={<App />} />
         <Route path="1" element={<Page1 />} />
         <Route path="2" element={<Page2 />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.Fragment>
   
 );

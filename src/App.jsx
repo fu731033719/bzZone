@@ -8,7 +8,7 @@ function App() {
     <Fragment>
       <div className='project-list'>
         <div className='list-title'>
-          <img src={WorkTitle} alt=""/>
+          <img className='title-pic' src={WorkTitle} alt=""/>
         </div>
         <div className='list-content'>
           <div className='list-item'></div>
@@ -24,7 +24,7 @@ function App() {
           MORE
         </div>
         <div className='contact'>
-          <img src={FooterInfo} alt=""/>
+          <img className='footer-pic' src={FooterInfo} alt=""/>
         </div>
       </div>
       <Footer/>

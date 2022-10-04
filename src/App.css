@@ -7,6 +7,10 @@
     padding-left: 6vw;
 }
 
+.title-pic {
+    width: 22.4vw;
+}
+
 .list-content {
     width: 74vw;
     margin: 5.5vw auto 0 auto;
@@ -39,6 +43,10 @@
     color: #fff;
     text-align: center;
     margin: 5.4vw auto 0 43.3vw;
+}
+
+.footer-pic {
+    width: 52vw;
 }
 
 .contact {
