@@ -39,8 +39,8 @@
 
 .bottom {
     width: 100vw;
+    height: 50vw;
     position: relative;
-    transform: translate(0, -20vw);
     z-index: -1;
 }
 
