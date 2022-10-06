@@ -24,7 +24,6 @@ function BackAnimation() {
   const transVw = (px) => {
     return px * (100 / document.documentElement.clientWidth);
   }
-  console.log('location', location);
   /** registration eyeFn  */
   const eyeball = (e) => {
     calEyeBall(e.pageX, e.pageY)
