@@ -26,7 +26,7 @@ export default function About() {
                   <h1 style={{marginBottom: '3vw'}}>EDCATION</h1>
                   <p>University of Art London</p>
                   <h2 style={{marginBottom: '0.5vw'}}>伦敦艺术大学</h2>
-                  <p style={{marginBottom: '1vw', fontSize: '0.5vw'}}>插画与视觉媒体 硕士              2019.6-2021.3</p>
+                  <p style={{marginBottom: '1vw'}}>插画与视觉媒体 硕士              2019.6-2021.3</p>
                   <p>1，TED x hangzhou*UAL 《象堡没有堡》<br/>发起者与参展者</p>
                   <p>2，野生青年首届参展艺术家</p>
                   <p>3，UAL与伦敦corsica studio联合插画展参展者</p>
