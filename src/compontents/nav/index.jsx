@@ -38,7 +38,7 @@ function Nav() {
                             color: isActive ? "#fff" : ""
                         };
                     }}
-                    to={`/Portfolio`}
+                    to={`/Project`}
                     >
                         Project
                     </NavLink>

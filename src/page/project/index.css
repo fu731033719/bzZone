@@ -1,0 +1,55 @@
+.project-content {
+    padding-top: 47vw;
+}
+.project-container {
+    margin-bottom: 9vw;
+}
+
+.project-container h1 {
+    color: #fff;
+    font-size: 5vw;
+    font-weight: bold;
+    margin-bottom: 5vw;
+    margin-left: 5vw;
+}
+
+.project-instance-list {
+    width: 68vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.project-item {
+    margin-right: 10.5vw;
+    margin-bottom: 7.5vw;
+    cursor: pointer;
+}
+
+.project-item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.project-pic {
+    width: 27.5vw;
+    height: 16.7vw;
+    transition: .4s;
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: 1.1vw;
+}
+.project-pic:hover {
+    border-radius: 0 8.4vw 8.4vw 0;
+}
+
+.project-pic img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1,1.1);
+}
+
+.project-dec {
+    color: #fff;
+    font-size: 1.6vw;
+}

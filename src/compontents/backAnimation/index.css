@@ -189,8 +189,10 @@
 }
 
 .start-2 {
-    right: 43.8vw;
-    top: 47.2vw;
+    /* right: 43.8vw;
+    top: 47.2vw; */
+    right: 63.8vw;
+    top: 37.2vw;
 }
 
 /** catlog */

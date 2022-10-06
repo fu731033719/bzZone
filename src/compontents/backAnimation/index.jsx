@@ -55,9 +55,10 @@ function BackAnimation() {
   useEffect(() => {
     calEyeBall(0,0);
   });
-
+  const isAbout =  pathname === '/About';
+  const isHome = pathname === '/' || pathname === '/Home';
   return (
-    pathname === '/About' ?
+    isAbout ?
     null
     :
     <Fragment>
@@ -92,14 +93,19 @@ function BackAnimation() {
           <img className='start start-1' src={Start} alt="" />
           <img className='start start-2' src={Start} alt="" />
           {/* cat-log */}
-          <div className='title'>
-            <div className='name'>
-              <img className='name-pic' src={Name} alt=""/>
+          {
+            isHome ?
+            <div className='title'>
+              <div className='name'>
+                <img className='name-pic' src={Name} alt=""/>
+              </div>
+              <div className='log'>
+                <img className='log-pic' src={Log} alt=""/>
+              </div>
             </div>
-            <div className='log'>
-              <img className='log-pic' src={Log} alt=""/>
-            </div>
-          </div>
+            :
+            null
+          }
         </div>
       </div>
     </Fragment>
