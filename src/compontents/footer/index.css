@@ -50,6 +50,7 @@
     bottom: -10vw;
     left: -20vw;
     animation: l-b-trans infinite 14s ease-in-out;
+    z-index: -1;
 }
 
 .r-b-ball{
@@ -58,4 +59,11 @@
     bottom: -20vw;
     right: -5vw;
     animation: r-b-trans infinite 14s ease-in-out;
+    z-index: -1;
+}
+
+.footer-tag {
+    font-size: 1vw;
+    color: #fff;
+    text-align: center;
 }

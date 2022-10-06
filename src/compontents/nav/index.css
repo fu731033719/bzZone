@@ -1,0 +1,68 @@
+.nav {
+    width: 100vw;
+    position: absolute;
+    top: 5.4vw;
+    display: flex;
+    padding: 2vw 0;
+    justify-content:flex-end;
+    align-items: center;
+    z-index: 99;
+}
+
+.nav-button-container {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 2.9vw;
+}
+
+.nav-line {
+    width: 2.7vw;
+    height: 0.3vw;
+    background-color: #fff;
+    margin: 0.6vw 0;
+    transition: 0.4s;
+}
+
+.nav-open .nav-line1 {
+    transform: translate(0, .9vw) rotate(-45deg);
+}
+.nav-open .nav-line2 {
+    opacity: 0;
+}
+
+.nav-open .nav-line3 {
+    transform: translate(0, -.9vw) rotate(45deg);
+}
+
+.nav-list{
+    display: flex;
+    font-size: 2.8vw;
+    font-weight: bold;
+    transition: .4s;
+    margin-right: 3.2vw;
+}
+
+.nav-list a{ 
+    font-size: 1.45vw;
+    color: #909090;
+    transition: .4s;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list a:hover {
+    color: #fff;
+}
+
+.nav-list-hide {
+    opacity: 0;
+    z-index: -1;
+}
+
+.nav-item {
+    margin-right: 5.7vw;
+}
+.nav-item:last-child {
+    margin-right: 0;
+
+}

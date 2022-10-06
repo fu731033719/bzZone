@@ -5,20 +5,23 @@ import App from './App';
 import {
   HashRouter,
   Routes,
-  Route
+  Route,
 } from "react-router-dom";
 import BackAnimation from './compontents/backAnimation';
-import Page1 from "./page/page1";
+import Nav from './compontents/nav';
+import About from "./page/about";
 import Page2 from "./page/page2";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.Fragment>
-    <BackAnimation />
     <HashRouter>
+      <BackAnimation />
+      <Nav />
       <Routes>
-        <Route path="content" element={<App />} />
-        <Route path="1" element={<Page1 />} />
-        <Route path="2" element={<Page2 />} />
+        <Route path="Home" element={<App />} />
+        <Route path="About" element={<About />} />
+        <Route path="Portfolio" element={<Page2 />} />
+        <Route path="Collection" element={<Page2 />} />
       </Routes>
     </HashRouter>
   </React.Fragment>

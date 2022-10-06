@@ -3,8 +3,7 @@ import GreenBall from '../../asset/green-ball.png';
 import PurpleBall from '../../asset/purple-ball.png';
 import Name from '../../asset/name.png';
 import Log from '../../asset/private-log.png';
-// import Bg from '../../asset/bg.png';
-import {useEffect} from 'react';
+import { useEffect } from 'react';
 /** face  */
 import Nose from '../../asset/nose.png'
 import LeftW from '../../asset/left-w.png'
@@ -13,20 +12,19 @@ import Mouth from '../../asset/mouth.png'
 
 /** start */
 import Start from '../../asset/start.png'
+import { Fragment } from 'react';
 
+import {
+  useLocation
+} from "react-router-dom";
 
-
-
-
-
-
-import {Fragment} from 'react';
 function BackAnimation() {
-
+  const location = useLocation();
+  const { pathname } = location;
   const transVw = (px) => {
     return px * (100 / document.documentElement.clientWidth);
   }
-
+  console.log('location', location);
   /** registration eyeFn  */
   const eyeball = (e) => {
     calEyeBall(e.pageX, e.pageY)
@@ -59,10 +57,12 @@ function BackAnimation() {
   });
 
   return (
+    pathname === '/About' ?
+    null
+    :
     <Fragment>
       <div className='global-bg'>
         <div className='content'>
-          {/* <img className='bg-test' src={Bg} alt=""/> */}
           {/* top-container */}
           <div>
             <img className='l-t-ball' src={GreenBall} alt=""/>

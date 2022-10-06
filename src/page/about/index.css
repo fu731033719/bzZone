@@ -1,0 +1,76 @@
+.about-content {
+    position: relative;
+    min-height: 1400px;
+    color: #fff;
+}
+
+.about-content p {
+    font-size: 1vw;
+    line-height: 1.7vw;
+    margin-bottom: 0.2vw;
+}
+
+.about-content h1 {
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.about-content h2 {
+    font-weight: bold;
+    font-size: 1.8vw;
+}
+
+.avatar {
+    width: 53vw;
+    right: 9vw;
+    top: 9vw;
+    position: absolute;
+}
+
+.about-1 {
+    top: 45vw;
+    left: 18vw;
+    position: absolute;
+}
+
+.about-2 {
+    top: 55vw;
+    left: 18vw;
+    position: absolute;
+}
+
+.about-3 {
+    top: 72vw;
+    left: 18vw;
+    position: absolute;
+}
+
+.about-4 {
+    top: 92vw;
+    left: 18vw;
+    position: absolute;
+}
+
+.about-5 {
+    top: 72vw;
+    left: 50vw;
+    position: absolute;
+}
+
+.about-6 {
+    top: 78.8vw;
+    left: 50vw;
+    position: absolute;
+}
+
+.about-7 {
+    top: 93vw;
+    left: 50vw;
+    position: absolute;
+}
+
+.about-8 {
+    top: 106.5vw;
+    left: 50vw;
+    position: absolute;
+ }

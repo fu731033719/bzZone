@@ -10,6 +10,7 @@ function Footer() {
         <div className='bottom'>
             <img className='l-b-ball' src={PurpleBall} alt=""/>
             <img className='r-b-ball' src={GreenBall} alt=""/>
+            <p className='footer-tag'>Copyright@BAOZHU</p>
         </div>
     </Fragment>
     
