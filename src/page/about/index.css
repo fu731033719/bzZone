@@ -19,61 +19,35 @@
     font-size: 1.8vw;
 }
 
+.about-content p {
+   margin: 0;
+}
+
+.info-card {
+    display: flex;
+    padding-top: 9vw;
+}
+.left-info-card {
+    margin-left: 10vw;
+}
 .avatar {
     width: 53vw;
-    right: 9vw;
-    top: 9vw;
-    position: absolute;
 }
-
-.about-1 {
-    top: 45vw;
-    left: 18vw;
-    position: absolute;
+.info-1 {
+    margin: 35.5vw 0 5vw 8vw;
 }
-
-.about-2 {
-    top: 55vw;
-    left: 18vw;
-    position: absolute;
+.info-2 {
+    margin-left: 8vw;
 }
+.experience-container {
+    display: flex;
+    margin-top: 8.5vw;
+    margin-bottom: 22vw;
 
-.about-3 {
-    top: 72vw;
-    left: 18vw;
-    position: absolute;
 }
-
-.about-4 {
-    top: 92vw;
-    left: 18vw;
-    position: absolute;
+.experience-container .left {
+    margin: 0 0 0 18vw;
 }
-
-.about-5 {
-    top: 72vw;
-    left: 50vw;
-    position: absolute;
+.experience-container .right {
+    margin-left: 12vw;
 }
-
-.about-6 {
-    top: 78.8vw;
-    left: 50vw;
-    position: absolute;
-}
-
-.about-7 {
-    top: 93vw;
-    left: 50vw;
-    position: absolute;
-}
-
-.about-8 {
-    top: 106.5vw;
-    left: 50vw;
-    position: absolute;
- }
-
- .end-line {
-    padding-top: 150vw;
- }

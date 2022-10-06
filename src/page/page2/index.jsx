@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import md from '../../markdown/test1.md';
-import remarkGfm from 'remark-gfm'
 import './index.css';
 
 export default function Page2() {
@@ -33,7 +32,7 @@ export default function Page2() {
           showMd ? 
           <div className='markdown-container'>
             <button onClick={emptymd}>close</button>
-            <ReactMarkdown source={[[remarkGfm, {singleTilde: false}]]}>
+            <ReactMarkdown>
               {text}
             </ReactMarkdown>,
           </div>
