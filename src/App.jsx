@@ -27,7 +27,9 @@ function App() {
           <img className='footer-pic' src={FooterInfo} alt=""/>
         </div>
       </div>
-      <Footer/>
+      <div style={{marginTop: '40vw'}}>
+        <Footer/>
+      </div>
     </Fragment>
     
   );
