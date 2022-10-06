@@ -1,17 +1,5 @@
 import './index.css';
-import GreenBall from '../../asset/green-ball.png';
-import PurpleBall from '../../asset/purple-ball.png';
-import Name from '../../asset/name.png';
-import Log from '../../asset/private-log.png';
 import { useEffect } from 'react';
-/** face  */
-import Nose from '../../asset/nose.png'
-import LeftW from '../../asset/left-w.png'
-import Eye from '../../asset/l-eye.png'
-import Mouth from '../../asset/mouth.png'
-
-/** start */
-import Start from '../../asset/start.png'
 import { Fragment } from 'react';
 
 import {
@@ -65,41 +53,41 @@ function BackAnimation() {
         <div className='content'>
           {/* top-container */}
           <div>
-            <img className='l-t-ball' src={GreenBall} alt=""/>
-            <img className='r-t-ball' src={PurpleBall} alt=""/>
+            <img className='l-t-ball' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fgreen-ball.png" alt=""/>
+            <img className='r-t-ball' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fpurple-ball.png" alt=""/>
           </div>
 
           {/* face-container */}
           <div className='face-container'>
-            <img className='nose' src={Nose} alt=""/> 
-            <img className='eye-w eye-w-1' src={LeftW} alt=""/>
+            <img className='nose' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fnose.png" alt=""/> 
+            <img className='eye-w eye-w-1' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fleft-w.png" alt=""/>
             <div className='eye-dot dot-1'>
               <div className='dot'></div>
             </div>
             <div className='eye'>
-              <img className='eye-1' src={Eye} alt=""/>
+              <img className='eye-1' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fl-eye.png" alt=""/>
             </div>
-            <img className='eye-w eye-w-2' src={LeftW} alt=""/>
+            <img className='eye-w eye-w-2' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fleft-w.png" alt=""/>
             <div className='eye-dot dot-2'>
               <div className='dot'></div>
             </div>
             <div className='eye'>
-              <img className='eye-2' src={Eye} alt=""/>
+              <img className='eye-2' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fl-eye.png" alt=""/>
             </div>
-            <img className='mouth' src={Mouth} alt=""/>
+            <img className='mouth' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fmouth.png" alt=""/>
           </div>
           {/* start-container */}
-          <img className='start start-1' src={Start} alt="" />
-          <img className='start start-2' src={Start} alt="" />
+          <img className='start start-1' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fstart.png" alt="" />
+          <img className='start start-2' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fstart.png" alt="" />
           {/* cat-log */}
           {
             isHome ?
             <div className='title'>
               <div className='name'>
-                <img className='name-pic' src={Name} alt=""/>
+                <img className='name-pic' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fname.png" alt=""/>
               </div>
               <div className='log'>
-                <img className='log-pic' src={Log} alt=""/>
+                <img className='log-pic' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fprivate-log.png" alt=""/>
               </div>
             </div>
             :

@@ -1,4 +1,3 @@
-import Avatar from '../../asset/avatar.png';
 import Footer from '../../compontents/footer';
 import './index.css';
 
@@ -18,7 +17,7 @@ export default function About() {
                   <p>我希望把创意和思考分享给你。</p>
                 </div>
               </div>
-              <img className='avatar' src={Avatar} alt="" />
+              <img className='avatar' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Favatar.png" alt="" />
             </div>
             <div className="experience-container">
               <div className="left">

@@ -1,14 +1,12 @@
 import './App.css';
-import WorkTitle from './asset/work-project.png'
-import FooterInfo from './asset/footer.png'
-import {Fragment} from 'react';
+import { Fragment } from 'react';
 import Footer from './compontents/footer';
 function App() {
   return (
     <Fragment>
       <div className='project-list'>
         <div className='list-title'>
-          <img className='title-pic' src={WorkTitle} alt=""/>
+          <img className='title-pic' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fwork-project.png" alt=""/>
         </div>
         <div className='list-content'>
           <div className='list-item'></div>
@@ -24,7 +22,7 @@ function App() {
           MORE
         </div>
         <div className='contact'>
-          <img className='footer-pic' src={FooterInfo} alt=""/>
+          <img className='footer-pic' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Ffooter.png" alt=""/>
         </div>
       </div>
       <div style={{marginTop: '40vw'}}>

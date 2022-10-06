@@ -11,7 +11,7 @@ import BackAnimation from './compontents/backAnimation';
 import Nav from './compontents/nav';
 import About from "./page/about";
 import Project from './page/project';
-import Page2 from "./page/page2";
+import ProjectDetail from "./page/projectDetail";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.Fragment>
@@ -22,7 +22,8 @@ root.render(
         <Route path="Home" element={<App />} />
         <Route path="About" element={<About />} />
         <Route path="Project" element={<Project />} />
-        <Route path="Collection" element={<Page2 />} />
+        <Route path="ProjectDetail" element={<ProjectDetail />} />
+        <Route path="Collection" element={<ProjectDetail />} />
       </Routes>
     </HashRouter>
   </React.Fragment>
