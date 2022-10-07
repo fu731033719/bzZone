@@ -12,6 +12,7 @@ import Nav from './compontents/nav';
 import About from "./page/about";
 import Project from './page/project';
 import ProjectDetail from "./page/projectDetail";
+import Collection from './page/collection';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const stop = () => {
   return false;
@@ -28,7 +29,7 @@ root.render(
         <Route path="About" element={<About />} />
         <Route path="Project" element={<Project />} />
         <Route path="ProjectDetail" element={<ProjectDetail />} />
-        <Route path="Collection" element={<ProjectDetail />} />
+        <Route path="Collection" element={<Collection />} />
       </Routes>
     </HashRouter>
   </React.Fragment>
