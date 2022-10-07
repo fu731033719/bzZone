@@ -24,6 +24,7 @@
 
 .social-icon img{
     width: 2vw;
+    cursor: pointer;
     margin-right: 1vw;
 }
 .social-icon img:last-child{
@@ -73,7 +74,6 @@
     height: 400px;
     overflow: hidden;
     position: relative;
-    z-index: -1;
 }
 
 .l-b-ball {
