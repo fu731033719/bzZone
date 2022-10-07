@@ -46,6 +46,15 @@ export default function Project() {
                             return <p className='project-dec' key={`dec-${k}`}>{dec}</p>
                           })
                         }
+                        {
+                          ins.projectTag ? 
+                          <div className='project-tag-list'>
+                            <p className="project-tag">{ins.projectTag.name}</p>
+                            <p className="project-tag">{ins.projectTag.time}</p>
+                          </div>
+                          :
+                          null
+                        }
                       </div>
                     })
                   }

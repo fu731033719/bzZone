@@ -52,4 +52,16 @@
 .project-dec {
     color: #fff;
     font-size: 1.6vw;
+    margin: 0;
+}
+.project-tag-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5vw
+}
+.project-tag {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.2vw;
+    margin: 0;
 }
