@@ -10,7 +10,7 @@ export default function ProjectDetail() {
     const [showMd, setShowMd] = useState(false);
     const [searchParams] = useSearchParams();
     const path = searchParams.get("path");
-    const bucketPath = 'http://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/';
+    const bucketPath = '//baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/';
     const onload = () => {
       fetch(`${bucketPath}${path}`).then(res => {
         /** finish load */
