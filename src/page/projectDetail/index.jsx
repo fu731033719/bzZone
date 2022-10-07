@@ -31,12 +31,13 @@ export default function ProjectDetail() {
     return (
       <div style={{ padding: "1rem 0" }}>
         {
-          showMd ? 
-          <div className='markdown-container'>
-            <ReactMarkdown>
-              {text}
-            </ReactMarkdown>,
-          </div>
+          showMd ?
+              <div className='markdown-container'>
+                <div className="markdown-mask"></div>
+                <ReactMarkdown>
+                  {text}
+                </ReactMarkdown>,
+              </div>
           :
           null
         }

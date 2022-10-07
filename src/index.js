@@ -13,6 +13,10 @@ import About from "./page/about";
 import Project from './page/project';
 import ProjectDetail from "./page/projectDetail";
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const stop = () => {
+  return false;
+  }
+document.οncοntextmenu = stop;
 root.render(
   <React.Fragment>
     <HashRouter>
