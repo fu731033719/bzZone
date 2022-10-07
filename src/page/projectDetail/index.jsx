@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
+import gfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
 import {
   useSearchParams,
 } from "react-router-dom";
@@ -34,7 +36,7 @@ export default function ProjectDetail() {
           showMd ?
               <div className='markdown-container'>
                 <div className="markdown-mask"></div>
-                <ReactMarkdown>
+                <ReactMarkdown rehypePlugins={[rehypeRaw]} plugins={[[gfm, { singleTilde: false }]]}>
                   {text}
                 </ReactMarkdown>,
               </div>
