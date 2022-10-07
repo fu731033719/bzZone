@@ -19,6 +19,7 @@ root.render(
       <BackAnimation />
       <Nav />
       <Routes>
+        <Route path="/" element={<App />} />
         <Route path="Home" element={<App />} />
         <Route path="About" element={<About />} />
         <Route path="Project" element={<Project />} />

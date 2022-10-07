@@ -1,9 +1,14 @@
 import Footer from '../../compontents/footer';
 import './index.css';
-
+import circle from '../../asset/about-circle.svg';
 export default function About() {
     return (
       <div>
+        <div className="bg">
+          <img className="circle" src={circle} alt="" />
+          <img className='about-ball-g' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fgreen-ball.png" alt=""/>
+          <img className='about-ball-p' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fpurple-ball.png" alt=""/>
+        </div>
         <div className="about-content">
             <div className='info-card'>
               <div className="left-info-card">

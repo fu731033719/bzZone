@@ -1,19 +1,19 @@
 .markdown-container {
-    width: 75vw;
+    width: 55vw;
     /* max-height: 1000px;
     overflow-y: scroll; */
-    padding: 3vw;
+    padding: 10vw;
     border-radius: 8px;
     margin: 15vw auto 0 auto;
     background: #fff;
 }
 
 .markdown-container h1 {
-    font-size: 2vw;
+    font-size: 2.8vw;
 }
 
 .markdown-container h2 {
-    font-size: 1.8vw;
+    font-size: 2.4vw;
 }
 
 .markdown-container h3 {
@@ -29,6 +29,6 @@
 }
 
 .markdown-container img {
-    max-width: 90%;
+    max-width: 100%;
     display: block;
 }

@@ -1,3 +1,56 @@
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.circle {
+    width: 50vw;
+    position: absolute;
+    animation: rotate infinite linear 8s;
+}
+
+@keyframes a-g {
+    0% {
+        transform: translate(-25%,-70%);
+    }
+    50% {
+        transform: translate(-15%,-60%);
+    }
+    100% {
+        transform: translate(-25%,-70%);
+    }
+}
+
+.about-ball-g {
+    width: 70vw;
+    position: absolute;
+    transform: translate(-25%,-70%);
+    animation: a-g infinite ease-in-out 12s;
+    z-index: -1;
+}
+
+@keyframes a-p {
+    0% {
+        transform: translate(30%, -60%);
+    }
+    50% {
+        transform: translate(20%, -50%);
+    }
+    100% {
+        transform: translate(30%, -60%);
+    }
+}
+.about-ball-p {
+    width: 75vw;
+    right: 0;
+    transform: translate(30%, -60%);
+    animation: a-p infinite ease-in-out 8s;
+    position: absolute;
+}
 .about-content {
     position: relative;
     min-height: 2vh;
