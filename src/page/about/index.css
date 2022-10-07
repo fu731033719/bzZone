@@ -57,23 +57,21 @@
     color: #fff;
 }
 .about-content p {
-    font-size: 1vw;
-    line-height: 1.7vw;
-    margin-bottom: 0.2vw;
+    margin: 0;
 }
 
 .about-content h1 {
     font-weight: bold;
     font-size: 2vw;
+    margin: 0;
+
 }
 
 .about-content h2 {
     font-weight: bold;
     font-size: 1.8vw;
-}
+    margin: 0;
 
-.about-content p {
-   margin: 0;
 }
 
 .info-card {
@@ -82,6 +80,7 @@
 }
 .left-info-card {
     margin-left: 10vw;
+    font-size: 1.4vw !important; 
 }
 .avatar {
     width: 53vw;
@@ -94,13 +93,40 @@
 }
 .experience-container {
     display: flex;
-    margin-top: 8.5vw;
+    margin-top: 10.5vw;
     margin-bottom: 22vw;
-
 }
 .experience-container .left {
     margin: 0 0 0 18vw;
 }
 .experience-container .right {
-    margin-left: 12vw;
+    margin-left: 7vw;
+}
+
+.exp-container {
+    width: 26vw;
+    margin-bottom: 3.5vw;
+}
+.exp-container h1{
+    margin-bottom: 2.6vw;
+}
+
+.exp-tag {
+    font-size: 0.5vw;
+}
+.exp-time {
+    display: flex;
+    justify-content: space-between;
+}
+.exp-time {
+    font-size: 1.1vw;
+}
+.left .exp-time {
+    margin-bottom: 1.6vw;
+}
+.right .exp-time {
+    margin-bottom: 1.1vw;
+}
+.exp-content p{
+    font-size: 1.1vw;
 }
