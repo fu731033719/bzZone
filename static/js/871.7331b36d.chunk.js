@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbz_zone=self.webpackChunkbz_zone||[]).push([[871],{871:function(e,n,s){e.exports=s.p+"static/media/index.f3e7e7c4a88325b0f4e8.md"}}]);
