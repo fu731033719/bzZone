@@ -1,6 +1,6 @@
 .markdown-container {
     width: 55vw;
-    padding: 10vw;
+    padding: 1vw 10vw 10vw 10vw;
     border-radius: 8px;
     margin: 15vw auto 0 auto;
     background: #fff;
@@ -36,6 +36,11 @@
 }
 
 .markdown-container img {
+    max-width: 100%;
+    display: block;
+}
+
+.markdown-container video {
     max-width: 100%;
     display: block;
 }

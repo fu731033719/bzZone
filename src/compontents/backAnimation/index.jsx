@@ -44,6 +44,8 @@ function BackAnimation() {
   });
   const isAbout =  pathname === '/About';
   const isHome = pathname === '/' || pathname === '/Home';
+  const isProjectDetail = pathname === '/ProjectDetail';
+
   return (
     isAbout ?
     null
@@ -77,7 +79,7 @@ function BackAnimation() {
             <img className='mouth' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fmouth.png" alt=""/>
           </div>
           {/* start-container */}
-          <img className='start start-1' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fstart.png" alt="" />
+          {!isProjectDetail ? <img className='start start-1' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fstart.png" alt="" />: null}
           <img style={isHome? {right: '46.8vw', top:'48.2vw'} : {}} className='start start-2' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fstart.png" alt="" />
           {/* cat-log */}
           {
