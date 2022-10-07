@@ -9,23 +9,19 @@ export default function ProjectDetail() {
     const [text, setText] = useState('');
     const [showMd, setShowMd] = useState(false);
     const [searchParams] = useSearchParams();
-    const index = searchParams.get("index");
-
+    const path = searchParams.get("path");
+    const bucketPath = 'http://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/';
     const onload = () => {
-      import(`../../markdown/project-${index}/index.md`).then(md => {
-        fetch(md.default).then(res => {
-          /** finish load */
-          if(res.ok) {
-            return res.text(); 
-          } else {
-              throw new Error(res.statusText);
-          }
-        }).then(text => {
-          setText(text);
-          setShowMd(true);
-        })
-      }).catch(err => {
-        console.error('【ArticleError】：未发现对应文章');
+      fetch(`${bucketPath}${path}`).then(res => {
+        /** finish load */
+        if(res.ok) {
+          return res.text(); 
+        } else {
+            throw new Error(res.statusText);
+        }
+      }).then(text => {
+        setText(text);
+        setShowMd(true);
       })
     }
     useEffect(() => {
