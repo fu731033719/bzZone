@@ -3,7 +3,7 @@ import {
   useNavigate,
 } from "react-router-dom";
 import { useEffect,useState } from 'react';
-
+import Footer from '../../compontents/footer';
 export default function Project() {
     const navigate = useNavigate();
     const [projectConfig, setProjectConfig] = useState({});
@@ -56,6 +56,7 @@ export default function Project() {
             null
           }
         </div>
+        <Footer/>
       </div>
     );
   }

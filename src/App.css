@@ -1,5 +1,5 @@
 .project-list {
-    margin: 0 auto;
+    margin: 0 auto 30vw auto;
     padding-top: 76vw;
 }
 
@@ -33,6 +33,7 @@
 }
 
 .more {
+    cursor: pointer;
     width: 11.7vw;
     height: 4.7vw;
     line-height: 4.7vw;
@@ -43,13 +44,27 @@
     color: #fff;
     text-align: center;
     margin: 5.4vw auto 0 43.3vw;
+    overflow: hidden;
+    transition: .4s;
+    position: relative;
+}
+.bg-more {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    background: #fff;
+    transition: .4s;
+    position: absolute;
+    z-index: -1;
+}
+.more:hover {
+    color: #000;
+}
+
+.more:hover .bg-more{
+    transform: translate(-10%, -50%);
 }
 
 .footer-pic {
     width: 52vw;
-}
-
-.contact {
-    padding-left: 6vw;
-    margin-top: 13.5vw;
 }

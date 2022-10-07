@@ -1,37 +1,68 @@
+.contact {
+    color: #fff;
+    width: 88vw;
+    margin: 0 auto;
+}
+.contact-pic {
+    width: 22.4vw; 
+    margin-bottom: 5vw;
+}
+.contact-card {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-card p{
+    font-size: 1.4vw;
+}
+.social {
+    text-align: right;
+}
+.social-icon {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon img{
+    width: 2vw;
+    margin-right: 1vw;
+}
+.social-icon img:last-child{
+    margin-right: 0;
+}
 @keyframes l-b-trans {
     0% {
-        bottom: -10vw;
+        top: 10vw;
         left: -20vw;
     }
     20% {
-        bottom: -5vw;
+        top: 5vw;
         left: -10vw;
     }
     50% {
-        bottom: 0vw;
+        top: 0vw;
         left: -20vw;
     }
     90% {
-        bottom: -15vw;
+        top: 15vw;
         left: -20vw;
     }
     100% {
-        bottom: -10vw;
+        top: 10vw;
         left: -20vw;
     }
 }
 
 @keyframes r-b-trans {
     0% {
-        bottom: 10vw;
+        top: 20vw;
         right: -10vw;
     }
     50% {
-        bottom: -10vw;
+        top: 20vw;
         right: -5vw;
     }
     100% {
-        bottom: 10vw;
+        top: 20vw;
         right: -10vw;
     }
     
@@ -39,7 +70,8 @@
 
 .bottom {
     width: 100vw;
-    height: 50vw;
+    height: 400px;
+    overflow: hidden;
     position: relative;
     z-index: -1;
 }
@@ -47,7 +79,7 @@
 .l-b-ball {
     width: 80vw;
     position: absolute;
-    bottom: -10vw;
+    top: 10vw;
     left: -20vw;
     animation: l-b-trans infinite 14s ease-in-out;
     z-index: -1;
@@ -55,8 +87,8 @@
 
 .r-b-ball{
     width: 75vw;
+    top: 20vw;
     position: absolute;
-    bottom: -20vw;
     right: -5vw;
     animation: r-b-trans infinite 14s ease-in-out;
     z-index: -1;
@@ -65,5 +97,8 @@
 .footer-tag {
     font-size: 1vw;
     color: #fff;
-    text-align: center;
+    width: 20vw;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
 }
