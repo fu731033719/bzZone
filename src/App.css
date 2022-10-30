@@ -3,17 +3,21 @@
     font-family: AmericanCaptain;
     src: url('./asset/font//AmericanCaptain.ttf');
 }
+@font-face {
+    font-family: AliBabaH;
+    src: url('./asset/font//Alibaba-PuHuiTi-H.ttf');
+}
 
 .project-list {
     margin: 0 auto 15vw auto;
     padding-top: 76vw;
 }
-.home-list-content .project-item:nth-child(2n){
+/* .home-list-content .project-item:nth-child(2n){
     transform: translateY(16vw);
 }
 .home-list-content .project-instance-list {
     padding-bottom: 16vw;
-}
+} */
 
 .list-title {
     padding-left: 6vw;
@@ -47,6 +51,58 @@
     margin-right: 0;
 }
 
+.home-list-content .project-pic {
+    border-radius: 4%;
+}
+
+.home-list-content .project-pic img{
+    transition: .5s;
+    opacity: 0;
+}
+
+
+.home-list-content .project-item:hover .project-pic img{
+    opacity: 1;
+}
+
+.home-list-content .project-item:hover .project-pic-mask {
+    opacity: 0;
+}
+
+.home-list-content .project-pic-mask {
+    width: 27.5vw;
+    height: 16.7vw;
+    position: absolute;
+    font-family: AliBabaH;
+    font-weight: bold;
+    top: 0;
+    padding-top: 5vw;
+    padding-left: 3vw;
+    transition: .5s;
+}
+
+.home-list-content .project-pic-mask p {
+    line-height: .6vw;
+}
+
+.home-list-content .project-pic-mask p:first-child {
+    font-size: 2vw;
+}
+
+.home-list-content .project-pic-mask p:nth-child(2) {
+    font-size: 1.5vw;
+
+}
+
+.home-list-content .project-item:nth-child(2n-1) .project-pic-mask {
+    background: linear-gradient(#55EFAC, #fff);
+}
+
+.home-list-content .project-item:nth-child(2n) .project-pic-mask {
+    background: linear-gradient(#9548DF, #fff);
+}
+
+/* #55EFAC */
 .more {
     cursor: pointer;
     width: 11.7vw;
