@@ -33,12 +33,16 @@ export default function Project() {
             config ?
             config.map((item, i) => {
               return <div className="project-container" key={`container-${i}`}>
-                <h1>{item.areaName}</h1>
+                <h1>{item.areaName} <span className='h1-tag'>0{item.instanceList.length}</span></h1>
                 <div className="project-instance-list">
                   {
                      item.instanceList.map((ins, j) => {
                       return <div className="project-item" key={`item-${j}`} onClick={e => locationProject(ins.projectMd, item.areaName, j)}>
                         <div className='project-pic'>
+                          <div className= {item.areaName === 'COMMERCIAL PROJECT'? "project-pic-mask project-pic-mask-special" : "project-pic-mask"}>
+                            <p>{ins.cover.title}</p>
+                            <p>{`{${ins.cover.tag}}`}</p>
+                          </div>
                           <img src={ins.projectPic} alt="" />
                         </div>
                         {

@@ -82,14 +82,13 @@ function BackAnimation() {
           {/* cat-log */}
           {
             isHome ?
-            <div className='title'>
+            <div>
               <div className='name'>
-                BAOZHU
+                <p>BAOZHU</p>
               </div>
               <div className='log'>
-                CREATIVE  DESIGNER  BAOZHU
-                <br/>
-                From 2017 to 2022
+                <p>CREATIVE  DESIGNER  BAOZHU</p>
+                <p>From 2017 to 2022</p>
               </div>
             </div>
             :

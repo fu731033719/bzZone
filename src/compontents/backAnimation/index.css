@@ -199,14 +199,10 @@
 }
 
 /** catlog */
-.title {
-    position: relative;
-}
-
 .name {
     position: absolute;
     top: 22vw;
-    left: 6vw;
+    left: 5.5vw;
     font-family: AmericanCaptain;
     font-size: 16.5vw;
     color: #fff;

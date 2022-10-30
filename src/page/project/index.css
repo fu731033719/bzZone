@@ -11,6 +11,13 @@
     font-weight: bold;
     margin-bottom: 5vw;
     margin-left: 5vw;
+    font-family: AmericanCaptain;
+}
+.h1-tag {
+    font-family: Helvetica, sans-serif;
+    font-size: 2.5vw;
+    transform: translate(30%, -60%);
+    position: absolute;
 }
 
 .project-instance-list {
@@ -38,9 +45,53 @@
     background: #fff;
     overflow: hidden;
     margin-bottom: 1.1vw;
+    border-radius: 2.1vw;
 }
+
+.project-pic img{
+    transition: .5s;
+    opacity: 0;
+}
+
+.project-pic-mask {
+    width: 27.5vw;
+    height: 16.7vw;
+    position: absolute;
+    font-family: AliBabaH;
+    font-weight: bold;
+    top: 0;
+    padding-top: 5vw;
+    padding-left: 3vw;
+    transition: .5s;
+    background: linear-gradient(#9548DF, #fff);
+}
+
+.project-pic-mask-special {
+    background: linear-gradient(#55EFAC, #fff);
+}
+
 .project-pic:hover {
-    border-radius: 0 8.4vw 8.4vw 0;
+    border-radius: 2.1vw 8.4vw 8.4vw 2.1vw;
+}
+
+.project-item:hover .project-pic img{
+    opacity: 1;
+}
+
+.project-item:hover .project-pic-mask {
+    opacity: 0;
+}
+
+.project-pic-mask p {
+    line-height: 2.4vw;
+}
+
+.project-pic-mask p:first-child {
+    font-size: 2vw;
+}
+
+.project-pic-mask p:nth-child(2) {
+    font-size: 1.5vw;
 }
 
 .project-pic img {
