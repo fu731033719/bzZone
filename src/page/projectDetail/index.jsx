@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect,Fragment } from 'react';
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
@@ -31,18 +31,20 @@ export default function ProjectDetail() {
     });
 
     return (
-      <div style={{ padding: "1rem 0" }}>
-        {
-          showMd ?
-              <div className='markdown-container'>
-                <div className="markdown-mask"></div>
-                <ReactMarkdown rehypePlugins={[rehypeRaw]} plugins={[[gfm, { singleTilde: false }]]}>
-                  {text}
-                </ReactMarkdown>,
-              </div>
-          :
-          null
-        }
-      </div>
+      <Fragment>
+          <div style={{ background:"#f6f6f6", padding: "1rem 0" }}>
+            {
+              showMd ?
+                  <div className='markdown-container'>
+                    <div className="markdown-mask"></div>
+                    <ReactMarkdown rehypePlugins={[rehypeRaw]} plugins={[[gfm, { singleTilde: false }]]}>
+                      {text}
+                    </ReactMarkdown>,
+                  </div>
+              :
+              null
+            }
+          </div>
+      </Fragment>
     );
   }

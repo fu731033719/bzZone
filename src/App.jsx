@@ -17,7 +17,7 @@ function App() {
         <div className='list-title'>
           <img className='title-pic' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone/home/PROJECT.png" alt=""/>
         </div>
-        <div className='list-content'>
+        <div className='list-content home-list-content'>
           <div className="project-instance-list">
             <div className="project-item" onClick={e => locationProject()}>
               <div className='project-pic'>
@@ -39,6 +39,50 @@ function App() {
               <div className='project-tag-list'>
                 <p className="project-tag">系列插画</p>
                 <p className="project-tag">2018</p>
+              </div>
+            </div>
+            <div className="project-item" onClick={e => locationProject()}>
+              <div className='project-pic'>
+                <img src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fproject-cover%2F2.png" alt="" />
+              </div>
+              <p className='project-dec'>COMMERCIAL PROJECT</p>
+              <p className='project-dec'>首页ICON动效整理与总结</p>
+              <div className='project-tag-list'>
+                <p className="project-tag">Pinduoduo</p>
+                <p className="project-tag">2021</p>
+              </div>
+            </div>
+            <div className="project-item" onClick={e => locationProject()}>
+              <div className='project-pic'>
+                <img src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fproject-cover%2F8.png" alt="" />
+              </div>
+              <p className='project-dec'>CREATIVE  PROJECT</p>
+              <p className='project-dec'>FREE WILL</p>
+              <div className='project-tag-list'>
+                <p className="project-tag">系列插画</p>
+                <p className="project-tag">2019</p>
+              </div>
+            </div>
+            <div className="project-item" onClick={e => locationProject()}>
+              <div className='project-pic'>
+                <img src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fproject-cover%2F3.png" alt="" />
+              </div>
+              <p className='project-dec'>COMMERCIAL PROJECT</p>
+              <p className='project-dec'>RAVENSKILL 品牌设计</p>
+              <div className='project-tag-list'>
+                <p className="project-tag">RAVENSKILL</p>
+                <p className="project-tag">2018</p>
+              </div>
+            </div>
+            <div className="project-item" onClick={e => locationProject()}>
+              <div className='project-pic'>
+                <img src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fproject-cover%2F10.png" alt="" />
+              </div>
+              <p className='project-dec'>CREATIVE  PROJECT</p>
+              <p className='project-dec'>象堡没有堡</p>
+              <div className='project-tag-list'>
+                <p className="project-tag">系列插画</p>
+                <p className="project-tag">2021</p>
               </div>
             </div>
           </div>

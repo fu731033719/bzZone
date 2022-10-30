@@ -1,8 +1,14 @@
+
 .project-list {
     margin: 0 auto 15vw auto;
     padding-top: 76vw;
 }
-
+.home-list-content .project-item:nth-child(2n){
+    transform: translateY(16vw);
+}
+.home-list-content .project-instance-list {
+    padding-bottom: 16vw;
+}
 .list-title {
     padding-left: 6vw;
 }

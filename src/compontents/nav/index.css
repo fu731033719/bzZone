@@ -1,18 +1,51 @@
 .nav {
     width: 100vw;
+    height: 7.5vw;
     position: absolute;
-    top: 5.4vw;
     display: flex;
-    padding: 2vw 0;
-    justify-content:flex-end;
+    justify-content: space-between;
     align-items: center;
     z-index: 99;
+    background-color: rgba(216,216,216,.2);
+}
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+.nav-logo {
+    width: 3.7vw;
+    height: 3.7vw;
+    background: #363636;
+    border-radius: 8px;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+.nav-logo img{
+    width: 3.7vw;
+    height: 3.7vw;
+}
+.nav-text {
+    font-size: 1.45vw;
+    color: #5A5A5A;
+    font-weight: bold;
+    margin-right: 2vw;
+}
+.nav-list-container {
+    display: flex;
+    align-items: center;
 }
 
 .nav-button-container {
     display: inline-block;
-    cursor: pointer;
     margin-right: 2.9vw;
+}
+
+.project-detail-nav .nav-line {
+    background-color: #5A5A5A;
+}
+.project-detail-nav .nav-list a:hover {
+    color: #5A5A5A;
 }
 
 .nav-line {
@@ -21,17 +54,6 @@
     background-color: #fff;
     margin: 0.6vw 0;
     transition: 0.4s;
-}
-
-.nav-open .nav-line1 {
-    transform: translate(0, .9vw) rotate(-45deg);
-}
-.nav-open .nav-line2 {
-    opacity: 0;
-}
-
-.nav-open .nav-line3 {
-    transform: translate(0, -.9vw) rotate(45deg);
 }
 
 .nav-list{
@@ -44,7 +66,7 @@
 
 .nav-list a{ 
     font-size: 1.45vw;
-    color: #909090;
+    color: #cdcdcd;
     transition: .4s;
     display: flex;
     align-items: center;
@@ -60,7 +82,7 @@
 }
 
 .nav-item {
-    margin-right: 5.7vw;
+    margin-right: 7vw;
 }
 .nav-item:last-child {
     margin-right: 0;

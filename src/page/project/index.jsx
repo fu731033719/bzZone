@@ -7,8 +7,8 @@ import Footer from '../../compontents/footer';
 export default function Project() {
     const navigate = useNavigate();
     const [projectConfig, setProjectConfig] = useState({});
-    const locationProject = (projectMd) => {
-      navigate(`/ProjectDetail?path=${projectMd}`)
+    const locationProject = (projectMd, type, index) => {
+      navigate(`/ProjectDetail?path=${projectMd}&projectType=${type}&projectIndex=${index + 1}`);
     }
 
     const loadProjectConfig = () => {
@@ -37,7 +37,7 @@ export default function Project() {
                 <div className="project-instance-list">
                   {
                      item.instanceList.map((ins, j) => {
-                      return <div className="project-item" key={`item-${j}`} onClick={e => locationProject(ins.projectMd)}>
+                      return <div className="project-item" key={`item-${j}`} onClick={e => locationProject(ins.projectMd, item.areaName, j)}>
                         <div className='project-pic'>
                           <img src={ins.projectPic} alt="" />
                         </div>

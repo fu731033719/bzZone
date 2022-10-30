@@ -1,6 +1,5 @@
 import './index.css';
 import { useEffect } from 'react';
-import { Fragment } from 'react';
 
 import {
   useLocation
@@ -47,10 +46,9 @@ function BackAnimation() {
   const isProjectDetail = pathname === '/ProjectDetail';
 
   return (
-    isAbout ?
+    isAbout || isProjectDetail ?
     null
     :
-    <Fragment>
       <div className='global-bg'>
         <div className='content'>
           {/* top-container */}
@@ -79,7 +77,7 @@ function BackAnimation() {
             <img className='mouth' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fmouth.png" alt=""/>
           </div>
           {/* start-container */}
-          {!isProjectDetail ? <img className='start start-1' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fstart.png" alt="" />: null}
+          <img className='start start-1' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fstart.png" alt="" />
           <img style={isHome? {right: '46.8vw', top:'48.2vw'} : {}} className='start start-2' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fstart.png" alt="" />
           {/* cat-log */}
           {
@@ -97,8 +95,6 @@ function BackAnimation() {
           }
         </div>
       </div>
-    </Fragment>
-    
   );
 }
 
