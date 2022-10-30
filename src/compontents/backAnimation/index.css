@@ -47,7 +47,7 @@
 
 .global-bg {
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
     position: absolute;
     z-index: -1;
     overflow: hidden;
@@ -207,16 +207,20 @@
     position: absolute;
     top: 22vw;
     left: 6vw;
-}
-
-.name-pic {
-    width: 43vw;
+    font-family: AmericanCaptain;
+    font-size: 14.5vw;
+    color: #fff;
 }
 
 .log {
     position: absolute;
     top: 35vw;
     left: 6vw;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5vw;
+    line-height: 2.8vw;
 }
 
 .log-pic {

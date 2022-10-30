@@ -3,9 +3,12 @@
     width: 88vw;
     margin: 0 auto;
 }
-.contact-pic {
+.contact-text {
     width: 22.4vw; 
     margin-bottom: 5vw;
+    font-size: 5vw;
+    color: #fff;
+    font-family: AmericanCaptain;
 }
 .contact-card {
     display: flex;

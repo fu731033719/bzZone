@@ -84,10 +84,12 @@ function BackAnimation() {
             isHome ?
             <div className='title'>
               <div className='name'>
-                <img className='name-pic' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fname.png" alt=""/>
+                BAOZHU
               </div>
               <div className='log'>
-                <img className='log-pic' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone%2Fzone-pic%2Fprivate-log.png" alt=""/>
+                CREATIVE  DESIGNER  BAOZHU
+                <br/>
+                From 2017 to 2022
               </div>
             </div>
             :

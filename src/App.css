@@ -1,4 +1,9 @@
 
+@font-face {
+    font-family: AmericanCaptain;
+    src: url('./asset/font//AmericanCaptain.ttf');
+}
+
 .project-list {
     margin: 0 auto 15vw auto;
     padding-top: 76vw;
@@ -9,8 +14,12 @@
 .home-list-content .project-instance-list {
     padding-bottom: 16vw;
 }
+
 .list-title {
     padding-left: 6vw;
+    font-family: AmericanCaptain;
+    color: #fff;
+    font-size: 5vw;
 }
 
 .title-pic {

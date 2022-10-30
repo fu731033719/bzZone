@@ -14,9 +14,7 @@ function App() {
   return (
     <Fragment>
       <div className='project-list'>
-        <div className='list-title'>
-          <img className='title-pic' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone/home/PROJECT.png" alt=""/>
-        </div>
+        <div className='list-title'>PROJECT</div>
         <div className='list-content home-list-content'>
           <div className="project-instance-list">
             <div className="project-item" onClick={e => locationProject()}>

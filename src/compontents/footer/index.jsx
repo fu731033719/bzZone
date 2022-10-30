@@ -10,7 +10,9 @@ function Footer() {
     <Fragment>
         <div className='bottom'>
             <div className="contact">
-              <img className='contact-pic' src="https://baozhucarrie-1305385933.cos.ap-shanghai.myqcloud.com/bzZone/home/CONTACT.png" alt="" />
+              <div className='contact-text'>
+                TALK TO ME
+              </div>
               <div className='contact-card'>
                 <div className='info'>
                   <p>INFO@BAOZHUCARRIE.ART</p>
