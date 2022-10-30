@@ -19,11 +19,14 @@
     border-radius: 0.6vw;
     margin-left: 4vw;
     margin-right: 4vw;
+    position: relative;
 }
 
 .nav-logo img{
     width: 3.7vw;
     height: 3.7vw;
+    position: absolute;
+    top: 0;
 }
 .nav-text {
     font-size: 1.45vw;
