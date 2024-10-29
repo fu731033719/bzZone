@@ -181,3 +181,10 @@ Base地：`杭州`
 专业：`计算机科学与技术`
 时间：`2013.9~2017.6`
 Tag: `优秀毕业生` `CET6`
+
+
+>   Online Web Qrcode:
+<img src="./image.png" width="100px">
+>   wx:
+<img src="./wx.jpg" width="100px">
+
